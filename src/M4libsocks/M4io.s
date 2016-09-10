@@ -1,0 +1,23 @@
+;IO Ports
+
+DATAPORT	= 0xFE00
+ACKPORT		= 0xFC00
+
+;M4 commands
+C_NETSOCKET	= 0x4331
+C_NETCONNECT	= 0x4332
+C_NETCLOSE	= 0x4333
+C_NETSEND	= 0x4334
+C_NETRECV	= 0x4335
+C_NETHOSTIP	= 0x4336
+
+
+
+
+
+_M4_IOwrite::
+	ret
+
+
+_M4_IOread::
+	ret
