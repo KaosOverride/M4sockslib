@@ -107,20 +107,16 @@ void main(void) {
 
    u8* pvmem;  // Pointer to video memory
 
-//   cpct_disableFirmware();
    cpct_setVideoMode(1);
 
    // Clear Screen
    cpct_memset(CPCT_VMEM_START, 0, 0x4000);
 
-   // Draw String on the middle of the screen
-   //cpct_drawStringM1("Welcome to CPCtelera!", pvmem, 1, 0);
-//   pvmem = cpct_getScreenPtr(CPCT_VMEM_START, 10, 96);
-//   cpct_drawStringM0("Welcome to CPCtelera!", pvmem, 1, 0);
-		printf("M4 libsocket test V0.1\r\n");
+
+  Do_NET();
 
    // Loop forever
-  Do_NET();
+
    while (1);
 }
 

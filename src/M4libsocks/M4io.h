@@ -12,7 +12,7 @@
 #define C_NETHOSTIP	0x4336
 
 
+#define R_INDEX		0xFF00
+#define R_RESP		0xFF02
+#define R_SOCKINFO	0xFF06
 
-extern void M4_IOwrite();
-
-extern void M4_IOread();
